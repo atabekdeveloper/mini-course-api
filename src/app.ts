@@ -8,6 +8,7 @@ export const app = express()
 export const jsonBodyMiddleware = express.json()
 
 app.use(jsonBodyMiddleware)
+app.use(express.urlencoded({ extended: true }));
 
 const coursesRouter = getCoursesRoutes(db)
 const testsRouter = getTestsRouter(db)
