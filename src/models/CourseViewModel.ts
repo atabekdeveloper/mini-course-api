@@ -1,4 +1,6 @@
+import { ObjectId } from "mongodb"
+
 export type CourseViewModel = {
-    id: number
+    _id: ObjectId
     title: string
 }
